@@ -1,0 +1,45 @@
+﻿# Data (NEVER commit raw data)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Jupyter (clean commits)
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+.ipynb_metadata/
+*.pyc
+__pycache__/
+
+# Environment (never commit)
+.env
+venv/
+env/
+.venv/
+environments/*.lock
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Secrets
+*.key
+*.pem
+config/secrets.yaml
+
+# Large files (>100MB)
+*.parquet
+*.h5
+*.joblib
+*.pkl
+
+# Logs
+logs/
+*.log
+
+# Outputs (regenerate these)
+reports/figures/*.png
+reports/figures/*.html
+!reports/figures/.gitkeep
